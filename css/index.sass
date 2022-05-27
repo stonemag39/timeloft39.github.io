@@ -1,0 +1,1341 @@
+*
+  box-sizing: border-box
+  outline: none
+  
+a
+  text-decoration: none
+  color: inherit
+
+a, button
+  cursor: pointer
+  
+input, button
+  border: none
+  padding: 0
+  background: none
+  
+p, ul, h1, h2, h3, h4, h5, h6, ol
+  padding: 0
+  margin: 0
+  font-weight: normal
+
+ul, ol
+  list-style: none
+  
+button, input
+  display: inline-block
+  
+body
+    font-family: Montserrat
+    background-color: #fff
+    margin: 0
+
+@mixin title
+    font:
+        size: 36px
+        weight: 600
+
+    line-height: 1.2
+    text-align: center
+
+//HEADER
+.header
+    background-image: url(../img/main/bg.png)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: top center
+    color: #fff
+
+    &-wrap
+        background-color: rgba(0, 0, 0, .5)
+        padding-bottom: 250px
+
+    &-top
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        z-index: 5
+        transition: all 0.3s
+        padding-bottom: 10px
+        padding-top: 10px
+        text-align: center
+        border-bottom: 1px solid rgba(256, 256, 256, .3)
+        background: rgba(0, 0, 0, .5)
+
+        &__img
+            display: block
+            width: 80px
+            height: 71px
+
+        &-contacts
+            display: inline-flex
+            align-items: center
+
+            &__img
+                width: 20px
+                height: 20px
+                display: block
+
+            &__link
+                font-size: 18px
+                line-height: 1.2
+                margin-left: 15px
+                transition: color 0.2s
+                margin-right: 40px
+
+                &:hover
+                    transition: color 0.2s
+                    color: #FF4F19
+                    opacity: 0.8
+        &__btn
+            font-size: 18px
+            color: #fff
+            line-height: 1.2
+            border: 2px solid #FF4F19
+            border-radius: 30px
+            padding: 15px 42px
+            transition: background-color 0.2s
+            margin-left: 150px
+
+            &:hover
+                transition: background-color 0.2s
+                background-color: #FF4F19
+
+        &-button-wrap
+            display: flex
+
+    &-bottom
+        padding-top: 200px
+
+        &__title
+            font-size: 49px
+            line-height: 1.2
+
+            &--bold
+                font-weight: 700
+
+        &-features
+            margin-top: 86px
+
+            &-card
+                display: inline-flex
+                align-items: center
+                margin-bottom: 40px
+
+                &__img
+                    width: 40px
+                    height: 40px
+                    display: block
+
+                &__title
+                    font-size: 22px
+                    line-height: 1.2
+                    margin-left: 20px
+
+        &-wrap
+            padding: 12px
+            background-color: rgba(0, 0, 0, 0.65)
+            box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.3)
+            border-radius: 30px
+            color: #fff
+
+            &-offer
+                border: 1px solid rgba(255, 255, 255, 0.25)
+                border-radius: 30px
+                padding-top: 29px
+                padding-bottom: 49px
+                padding-left: 27px
+                padding-right: 27px
+
+                &__title
+                    font-size: 35px
+                    line-height: 1
+                    margin-bottom: 15px
+                    text-align: center
+
+                &__subtitle
+                    font-size: 23px
+                    line-height: 1.2
+                    text-align: center
+
+                &-form
+                    margin-top: 30px
+                    display: flex
+                    flex-direction: column
+
+                    &__input
+                        margin-bottom: 25px
+                        font-size: 16px
+                        line-height: 1  
+                        text-transform: uppercase
+                        padding-bottom: 13px
+                        padding-left: 50px
+                        background: none
+                        border: none
+                        border-bottom: 1px solid rgba(255, 255, 255, 0.25)
+                        color: #fff
+                        
+                        &:nth-child(1)
+                            background-image: url(../img/main/name.svg)  
+                            background-repeat: no-repeat  
+                            background-position: 15px 2px
+                            background-size: 20px
+
+                        &:nth-child(2)
+                            background-image: url(../img/main/phone.svg)  
+                            background-repeat: no-repeat  
+                            background-position: 15px 2px
+                            background-size: 20px
+                            margin-bottom: 35px
+
+                    &-label
+
+                        &__img
+                            margin-left: 10px
+                            margin-right: 10px
+                            display: inline-block
+                            width: 20px
+                            height: 20px
+                            cursor: pointer
+
+                        &__desc
+                            font-size: 18px
+                            line-height: 1
+                            cursor: pointer
+                            margin-right: 7px
+
+                        &__sub
+                            font-size: 14px
+                            line-height: 1
+                            color: #A3A3A3
+                            cursor: pointer
+
+                    &__btn
+                        margin-top: 30px
+                        margin-bottom: 20px
+                        padding: 18px 80px
+                        color: #fff
+                        background-color: #FF4F19
+                        border-radius: 30px
+                        font-size: 18px
+                        box-shadow: 0px 3px 0px rgba(255, 79, 25, .5)
+                        transition: box-shadow 0.2s
+
+                        &:hover
+                            transition: box-shadow 0.2s
+                            box-shadow: none
+
+                        &:active
+                            background-color: #B93B14
+
+                    &-wrap
+                        display: flex
+                        align-items: center
+
+                    &__checkbox
+                        width: 20px
+                        height: 20px
+                        margin-right: 15px
+
+                    &__desc
+                        margin-top: 5px
+                        font-size: 16px
+                        line-height: 1.2
+
+                    &__link
+                        text-decoration: underline
+
+                        &:hover
+                            color: #fff
+                            text-decoration: none
+
+.header-top.fixed 
+  background-color: rgba(0,0,0,0.8)
+  border-color: transparent
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3)
+  transition: all 0.3s
+
+//ADVANTAGES
+.advantages
+    padding-top: 190px
+    padding-bottom: 70px
+
+    &__title
+        @include title
+        margin-bottom: 71px
+
+        &--orange
+            color: #FF4F19
+
+    &-features
+
+        &-card
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            padding-left: 50px
+            padding-right: 50px
+            margin-bottom: 120px
+            
+            &__img
+                display: block
+                width: 100px
+                height: 100px
+
+            &__desc
+                font-size: 20px
+                line-height: 1.2
+                text-align: center
+
+//PRODUCTS
+.products
+    padding-bottom: 160px
+
+    &__title
+        @include title
+        margin-bottom: 65px
+
+        &--orange
+            color: #FF4F19
+
+    &-galery
+
+        &-card
+            display: flex
+            justify-content: center
+            align-items: flex-end
+            position: relative
+            height: 250px
+            overflow: hidden
+            margin-bottom: 25px
+
+            &__img
+                display: block
+                width: 100%
+                height: 100%
+                object-fit: cover
+                position: absolute
+                top: 0
+                right: 0
+                z-index: 1
+                border-radius: 15px
+
+            &::after
+                content: ""
+                position: absolute
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.72) 100%)
+                top: 0
+                right: 0
+                width: 100%
+                height: 100%
+                z-index: 10
+                border-radius: 15px
+
+            &__title
+                position: relative
+                padding-bottom: 16px
+                padding-right: 22px
+                z-index: 13
+                width: 100%
+                display: flex
+                justify-content: flex-end
+                color: #fff
+                font-size: 30px
+                font-weight: 600
+
+//SALE
+.sale
+    background-image: url(../img/sale/bg.png)
+    background-repeat: no-repeat
+    background-size: 96%
+    background-position: center center
+    padding-top: 150px
+    padding-bottom: 150px
+
+    &__title
+        font-size: 36px
+        font-weight: 600
+        margin-bottom: 20px
+
+        &--orange
+            color: #FF4F19
+
+    &__subtitle
+        font-size: 24px
+        margin-bottom: 75px
+
+    &-timer
+
+        &__title
+            font-size: 32px
+            margin-bottom: 10px
+
+        &__counter
+            margin-bottom: 10px
+            font-size: 64px
+            font-weight: 600
+
+        &-wrap
+
+            &__desc
+                font-size: 24px
+                margin-right: 39px
+
+//EXAMPLES
+.examples
+    padding-top: 125px
+    padding-bottom: 125px
+
+    &__title
+        @include title
+        margin-bottom: 85px
+
+    &-galery
+        display: flex
+        justify-content: center
+        align-items: flex-start
+
+        &-cases
+            width: 765px
+            display: inline-block
+
+        &-case
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            margin-left: 10px
+
+            &-wrap
+                flex-basis: 376px
+
+                &-item
+                    display: inline-block
+                    margin-right: 10px
+                    margin-bottom: 10px
+                    position: relative
+                    transition: background-color 0.2s, background-image 0.2s
+
+                    &__img
+                        width: 173px
+                        height: 173px
+                        display: inline-block
+                        background-size: cover
+                        cursor: pointer
+                        background: none
+
+                    &:hover::after
+                        content: ""
+                        width: 100%
+                        height: 100%
+                        top: 0
+                        left: 0
+                        position: absolute
+                        background-color: rgba(255, 79, 25, 0.2)
+                        transition: background-color 0.2s
+
+                    &:hover::before
+                        content: ""
+                        position: absolute
+                        top: 38%
+                        left: 38%
+                        background-image: url(../img/examples/zoom.svg)
+                        width: 50px
+                        height: 50px
+                        z-index: 3
+                        transition: background-image 0.2s
+
+            &-item
+                position: relative
+                transition: background-color 0.2s, background-image 0.2s
+
+                &__img
+                    width: 360px
+                    height: 355px
+                    margin-bottom: 6px
+                    margin-right: 15px
+                    background-size: cover
+                    cursor: pointer
+                    background: none
+
+                &:hover::after
+                    content: ""
+                    width: 360px
+                    height: 355px
+                    top: -170px
+                    left: 0
+                    position: absolute
+                    background-color: rgba(255, 79, 25, 0.2)
+                    transition: background-color 0.2s
+
+                &:hover::before
+                    content: ""
+                    position: absolute
+                    top: 44%
+                    left: 41%
+                    background-image: url(../img/examples/zoom.svg)
+                    width: 50px
+                    height: 50px
+                    z-index: 3
+                    transition: background-image 0.2s
+
+    &-buttons
+        width: 235px
+        display: inline-block
+
+        &__btn
+            width: 235px
+            font-size: 18px
+            line-height: 1.5
+            padding: 12px 35px
+            background-color: #C4C4C4
+            border-radius: 10px
+            margin-right: 20px
+            margin-bottom: 10px
+            transition: background-color .2s, font-weight .2s
+
+            &:hover
+                background-color: rgba(255, 79, 25, 0.2)
+                transition: background-color .2s
+
+            &.active
+                background-color: rgba(255, 79, 25, 0.55)
+                transition: background-color .2s, font-weigt .2s
+                font-weight: 600
+
+.examples-galery-case:not(:first-child)
+    display: none
+
+.one:hover::after
+    top: 0
+
+//REVIEWS
+.reviews
+    padding-top: 125px
+    padding-bottom: 100px
+    background: rgba(255, 79, 25, 0.12)
+    border-radius: 255px
+
+    &__title
+        @include title
+
+        &--orange
+            color: #FF4F19
+
+    &-slider
+        margin-top: 60px
+
+        &-card
+            display: inline-flex
+            align-items: flex-start
+
+            &__img
+                width: 122px
+                height: 122px
+                display: block
+                margin-right: 46px
+
+            &-text
+
+                &__title
+                    font-size: 36px
+                    font-weight: 600
+                    margin-bottom: 20px
+
+                &__desc
+                    font-size: 20px  
+
+.owl-carousel .owl-item img
+    width: 122px
+
+.owl-theme .owl-nav
+    display: none
+
+.owl-theme .owl-dots, .owl-theme .owl-nav
+    margin-top: 50px
+                
+//FAQ
+.faq
+    padding-top: 130px
+
+    &__title
+        @include title
+        margin-bottom: 50px
+
+        &--orange 
+            color: #FF4F19
+
+    &-list
+
+        &-card
+            background-color: #C4C4C4
+            border-radius: 10px
+            margin-bottom: 16px
+            padding: 16px 31px
+
+            &-top
+                display: flex
+                align-items: center
+                justify-content: space-between
+                cursor: pointer
+
+                &__img
+                    width: 30px
+                    height: 30px
+
+            &__title
+                font-size: 24px
+                font-weight: 600
+
+            &-bottom
+                font-size: 18px
+                margin-top: 25px
+                display: none
+
+.faq-list-card-top.active .faq-list-card-top__img
+  transform: rotate(180deg)    
+
+//CONTACTS
+.contacts
+    padding-top: 130px
+    padding-bottom: 100px
+
+    &__title
+        @include title
+        margin-bottom: 50px
+
+        &--orange 
+            color: #FF4F19
+
+    &-wrap
+        margin-top: 70px
+        display: flex
+        align-items: flex-start
+        justify-content: center
+
+        &-card
+            display: flex
+            flex-direction: column
+            align-items: center
+            margin: 0 75px
+
+            &__img
+                width: 76px
+                height: 76px
+
+            &__title
+                font-size: 20px
+                font-weight: 600
+                color: #FF4F19
+                margin-bottom: 5px
+                margin-top: 20px
+
+            &__desc
+                font-size: 20px
+                transition: color 0.2s
+
+                &:hover
+                    transition: color 0.2s
+                    color: #FF4F19
+                    opacity: 0.9 
+                    
+//FOOTER
+.footer
+    background-color: #FF4F19
+    color: #fff
+    text-align: center
+    padding-bottom: 25px
+    padding-top: 25px
+
+    &__desc
+        font-size: 20px
+
+//POPUPS
+.popup-container 
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  z-index: 10
+  display: none
+
+.popup-overlay 
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: rgba(0, 0, 0, 0.5)
+  cursor: pointer
+
+.popup-header
+  position: relative
+  display: inline-block
+  width: 340px
+  background: #fff
+  border-radius: 5px
+  z-index: 2
+  padding: 30px 15px
+
+  &__close
+    position: absolute
+    display: inline-block
+    background: url(../img/popup/close.svg)
+    width: 15px
+    height: 15px
+    top: 10px
+    right: 10px
+    border: none
+
+  &__title
+    margin-top: 15px
+    text-align: center
+    font-size: 18px
+    font-weight: bold
+
+  &__subtitle
+    margin-top: 10px
+    text-align: center
+    font-size: 16px
+
+  &-form
+    margin-top: 30px
+    display: flex
+    flex-direction: column
+
+    &__input
+      border: none
+      border-bottom: 1px solid rgba(0,0,0,.3)
+      padding: 10px 20px
+      margin-bottom: 20px
+    
+    &__submit
+      border-radius: 999px
+      padding: 10px 20px
+      margin-top: 20px
+      display: inline-block
+      border: 2px solid #FF4F19
+      transition: background-color 0.2s, color 0.2s
+
+      &:hover
+        background-color: #FF4F19
+        color: #fff
+        transition: background-color 0.2s, color 0.2s
+
+      &:active
+        background-color: #B93B14
+        
+//MEDIA
+//HEADER
+@media (max-width: 1400px) 
+    .header-top__img
+        width: 59px
+
+    .header-top-contacts__link
+        font-size: 14px
+
+    .header-top-contacts__img
+        width: 16px
+
+    .header-top__btn
+        font-size: 14px
+        padding: 13px 20px
+
+    .header-bottom__title
+        font-size: 36px
+
+    .header-bottom
+        padding-top: 150px
+
+    .header-bottom-features-card__img
+        width: 30px
+
+    .header-bottom-features-card__title
+        font-size: 18px
+
+    .header-bottom-features
+        margin-top: 60px
+        display: flex
+        flex-direction: column
+
+    .header-bottom-features-card
+        margin-bottom: 16px
+
+    .header-bottom-wrap-offer__title
+        font-size: 26px
+
+    .header-bottom-wrap-offer__subtitle
+        font-size: 16px
+
+    .header-bottom-wrap-offer-form__input
+        font-size: 12px
+        margin-bottom: 20px
+        padding-left: 56px
+
+    .header-bottom-wrap-offer-form-label__desc
+        font-size: 15px
+
+    .header-bottom-wrap-offer-form__btn
+        padding-top: 13px
+        padding-bottom: 13px
+        font-size: 16px
+
+    .header-bottom-wrap-offer-form__desc
+        font-size: 14px
+
+    .header-bottom-wrap-offer-form__checkbox
+        width: 16px
+
+    .header-wrap
+        padding-bottom: 200px
+
+@media (max-width: 1200px)
+    .header-top__btn
+        padding: 8px 50px
+
+    .header-top
+        padding-top: 0
+        padding-bottom: 0
+
+    .header-bottom-wrap-offer-form__btn
+        padding: 12px 28px
+
+    .header-top__btn
+        padding: 8px 36px
+
+    .header-bottom-wrap-offer-form__desc
+        font-size: 12px
+
+    .header-bottom-wrap-offer-form-label__desc
+        font-size: 13px
+
+    .header-bottom-wrap-offer__title
+        font-size: 23px
+
+    .header-bottom-wrap-offer__subtitle
+        font-size: 14px
+
+    .header-bottom-wrap-offer-form__input:nth-child(1)
+        background-size: 16px
+
+    .header-bottom-wrap-offer-form__input:nth-child(2)
+        background-size: 16px
+
+    .header-bottom-features-card
+        margin-bottom: 7px
+
+    .header-wrap
+        padding-bottom: 150px
+
+    .header-bottom__title
+        font-size: 34px
+
+@media (max-width: 992px)
+    .header-top__img
+        width: 50px
+
+    .header-top__btn
+        margin-left: 90px
+
+    .header-bottom
+        padding-top: 110px
+
+    .header-bottom__title
+        font-size: 30px
+
+    .header-bottom-features
+        margin-top: 40px
+
+    .header-bottom-features-card__img
+        width: 24px
+
+    .header-bottom-features-card__title
+        font-size: 15px
+
+    .header-wrap
+        font-size: 90px
+
+    .header-bottom-wrap-offer__title
+        font-size: 21px
+        margin-bottom: 11px
+
+    .header-bottom-wrap-offer-form__input:nth-child(2)
+        margin-bottom: 23px
+
+    .header-bottom-wrap-offer-form__btn
+        margin-top: 20px
+        font-size: 14px
+
+    .header-bottom-wrap-offer
+        padding-bottom: 35px
+
+    .header-top__img
+        margin-right: 0
+
+    .header-top__btn
+        margin-left: 0
+
+    .header-top-wrap
+        display: flex
+        flex-direction: column
+
+    .header-bottom-wrap-offer-form-flex
+        display: flex
+        flex-direction: column
+
+    .header-bottom-wrap-offer-form-label__img
+        position: absolute
+
+    .header-bottom-wrap-offer-form-label__desc
+        margin-left: 40px
+
+    .header-bottom-wrap-offer-form-label__sub
+        margin-left: 40px
+
+@media (max-width: 768px)
+    .header-top__img
+        margin: 0 auto
+
+    .header-top-wrap
+        align-items: center
+
+    .header-top__btn
+        margin: 15px auto 
+
+    .header-bottom
+        padding-top: 215px
+
+    .header-bottom__title
+        text-align: center
+
+    .header-wrap
+        padding-bottom: 50px   
+
+    .header-top-contacts__link
+        margin-right: 0
+
+    .header-bottom-wrap-offer-form-flex
+        flex-direction: row
+
+    .header-bottom-wrap-offer-form-label__sub
+        margin-left: 7px
+        font-size: 13px
+
+@media (max-width:576px)
+    .header-bottom-wrap-offer-form-flex
+        flex-direction: column
+
+    .header-bottom-wrap-offer-form-label__sub
+        margin-left: 40px
+
+//ADVANTAGES
+@media (max-width: 1400px)
+    .advantages
+        padding-top: 140px
+
+    .advantages__title
+        font-size: 34px
+
+    .advantages-features-card__img
+        width: 80px
+        height: 80px
+
+    .advantages-features-card__desc
+        font-size: 18px
+
+    .advantages-features-card
+        margin-bottom: 100px
+
+@media (max-width: 1200px)
+    .advantages
+        padding-top: 120px
+        padding-bottom: 30px
+
+    .advantages-features-card__img
+        width: 65px
+
+    .advantages__title
+        font-size: 32px
+
+@media (max-width: 992px)
+    .advantages__title
+        font-size: 30px
+
+    .advantages-features-card__desc
+        font-size: 16px
+
+    .advantages-features-card
+        margin-bottom: 50px
+
+    .advantages__title
+        font-size: 27px
+        margin-bottom: 58px
+
+@media (max-width: 768px)
+    .advantages
+        padding-top: 80px
+
+    .advantages-features-card
+        justify-content: flex-start
+        margin-bottom: 25px
+
+    .advantages-features-card__desc
+        margin-left: 15px
+        font-size: 14px
+
+    .advantages__title
+        margin-bottom: 35px
+        font-size: 25px
+
+@media (max-width: 576px)
+    .advantages-features-card
+        flex-direction: column
+
+//PRODUCTS
+@media (max-width: 1400px)
+    .products__title
+        font-size: 34px
+
+    .products-galery-card__title
+        font-size: 26px
+        padding-bottom: 36px
+
+    .products-galery-card__img
+        height: 94%
+
+    .products-galery-card::after
+        height: 94%
+
+@media (max-width: 1200px)
+    .products__title
+        font-size: 32px
+
+    .products
+        padding-bottom: 100px
+
+@media (max-width: 992px)
+    .products__title
+        font-size: 27px
+
+    .products-galery-card__title
+        font-size: 24px
+
+    .products-galery-card__img
+        height: 89%
+
+    .products-galery-card::after
+        height: 89%
+
+    .products
+        padding-bottom: 40px
+
+@media (max-width: 768px)
+    .products
+        padding-bottom: 20px
+
+//SALE
+@media (max-width: 1400px)
+    .sale__title
+        font-size: 34px
+
+    .sale__subtitle
+        font-size: 20px
+
+    .sale-timer__title
+        font-size: 30px
+
+    .sale-timer-wrap__desc
+        font-size: 22px
+        margin-right: 48px
+
+    .header-bottom-wrap-offer-form__btn
+        padding: 18px 55px
+
+@media (max-width: 1200px)
+    .sale__title
+        font-size: 32px
+
+    .sale-timer__title
+        font-size: 26px
+
+    .sale-timer-wrap__desc
+        margin-right: 44px
+
+@media (max-width: 992px)
+    .sale__title
+        font-size: 27px
+
+    .sale__subtitle
+        font-size: 18px
+
+    .sale-timer__title
+        font-size: 22px
+
+    .sale-timer-wrap__desc
+        font-size: 20px
+
+    .sale-timer__counter
+        font-size: 57px
+
+    .sale-timer-wrap__desc
+        margin-right: 36px
+
+@media (max-width: 768px)
+    .sale__subtitle
+        font-size: 16px
+
+    .sale-timer-wrap__desc
+        font-size: 17px
+        margin-right: 50px
+
+    .sale
+        background-image: none
+        background: rgba(255, 79, 25, 0.12)
+        padding-top: 60px
+        padding-bottom: 100px
+        text-align: center
+
+    .sale-timer-wrap__desc
+        margin-right: 23px
+        margin-left: 24px
+
+    .sale-timer-wrap
+        margin-bottom: 20px
+
+    .header-bottom-wrap-offer-form__desc br 
+        display: none
+
+//EXAMPLES
+@media (max-width: 1400px)
+    .examples-buttons__btn
+        font-size: 16px
+
+    .examples__title
+        font-size: 34px
+
+@media (max-width: 1200px)
+    .examples
+        padding-top: 100px
+        padding-bottom: 100px
+
+    .examples__title
+        font-size: 32px
+        margin-bottom: 70px
+
+    .examples-buttons__btn
+        width: 200px
+
+    .examples-galery-case-item__img
+        height: 310px
+        width: 313px
+
+    .examples-galery-case-wrap-item__img
+        width: 150px
+        height: 150px
+
+    .examples-galery-case-wrap
+        flex-basis: 329px
+
+@media (max-width: 992px)
+    .examples-buttons__btn
+        width: 158px
+        font-size: 14px
+
+    .examples-galery-case-wrap
+        flex-basis: 229px
+
+    .examples-galery-case-wrap-item__img
+        width: 100px
+        height: 100px
+
+    .examples-galery-case-item__img
+        height: 209px
+        width: 212px
+
+    .examples__title
+        font-size: 27px
+        margin-bottom: 50px
+
+    .examples
+        padding-top: 50px
+
+@media (max-width: 768px)
+    .width-768
+        display: none
+
+    .examples-buttons__btn
+        padding: 9px 35px
+        line-height: 1
+
+@media (max-width: 576px)
+    .examples-galery
+        flex-direction: column
+        align-items: center
+
+    .examples-buttons
+        width: 200px
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+
+    .examples-buttons__btn
+        margin-right: 0
+
+    .examples-galery-cases
+        width: 230px
+
+    .examples-galery-case
+        width: 230px
+        justify-content: flex-start
+        align-items: baseline
+        align-content: stretch
+
+    .examples-galery-case-wrap
+        width: 230px
+
+//REVIEWS
+@media (max-width: 1400px)
+    .reviews
+        padding-top: 100px
+        padding-bottom: 60px
+
+    .reviews__title
+        font-size: 34px
+
+    .reviews-slider-card-text__title
+        font-size: 30px
+
+    .reviews-slider-card-text__desc
+        font-size: 18px
+
+    .owl-theme .owl-dots, .owl-theme .owl-nav
+        margin-top: 33px
+
+@media (max-width: 1200px)
+    .reviews__title
+        font-size: 32px
+
+    .reviews-slider
+        margin-top: 45px
+
+    .reviews-slider-card-text__title
+        font-size: 26px
+
+    .reviews-slider-card-text__desc
+        font-size: 16px
+
+    .reviews
+        padding-top: 70px
+        padding-bottom: 25px
+
+@media (max-width: 992px)
+    .reviews__title
+        font-size: 27px
+
+    .reviews-slider-card-text__title
+        font-size: 22px
+
+    .reviews-slider-card-text__desc
+        font-size: 14px
+
+    .reviews-slider-card__img
+        width: 100px
+        height: 100px
+
+@media (max-width: 576px)
+    .reviews
+        border-radius: 175px
+
+//FAQ
+@media (max-width: 1400px)
+    .faq__title
+        font-size: 34px
+
+    .faq-list-card__title
+        font-size: 20px
+
+    .faq-list-card-bottom
+        font-size: 16px
+
+@media (max-width: 1200px)
+    .faq__title
+        font-size: 32px
+
+@media (max-width: 992px)
+    .faq
+        padding-top: 100px
+
+    .faq__title
+        font-size: 27px
+
+    .faq-list-card__title
+        font-size: 18px
+
+    .faq-list-card
+        padding: 11px 31px
+
+    .faq-list-card-bottom
+        font-size: 14px
+
+//CONTACTS
+@media (max-width: 1400px)
+    .contacts
+        padding-top: 100px
+
+    .contacts__title
+        font-size: 34px
+
+    .contscts-wrap-card__img
+        width: 64px
+
+    .contacts-wrap-card__desc
+        font-size: 17px   
+
+@media (max-width: 1200px)
+    .contacts
+        padding-top: 80px  
+
+    .contacts__title
+        font-size: 32px
+
+    .contacts-wrap
+        margin-top: 60px
+
+    .contscts-wrap-card__img
+        width: 55px
+
+    .contacts-wrap-card__title
+        font-size: 18px
+
+@media (max-width: 992px)
+    .contacts__title
+        font-size: 27px
+
+    .contacts-wrap-card__desc
+        font-size: 15px
+
+@media (max-width: 576px)
+    .contacts-wrap
+        flex-direction: column
+        align-items: center
+
+    .contacts-wrap-card
+        margin-bottom: 20px
+
+//FOOTER
+@media (max-width: 1400px)
+    .footer__desc
+        font-size: 18px
+
+@media (max-width: 1200px)
+    .footer__desc
+        font-size: 16px
+
+@media (max-width: 768px)
+    .footer__desc
+        font-size: 14px   
