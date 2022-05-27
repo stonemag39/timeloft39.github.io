@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeLoft — мебель на заказ в стиле лофт</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./owlslider/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlslider/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrap">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2">
+                            <img src="./img/header/logo.svg" alt="" class="header-top__img">
+                        </div>
+                        <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                            <div class="header-top-wrap">
+                                <article class="header-top-contacts">
+                                    <img src="./img/header/email.svg" alt="" class="header-top-contacts__img">
+                                    <a href="mailto:timeloft39@inbox.ru" class="header-top-contacts__link">timeloft39@inbox.ru</a>
+                                </article>
+                                <article class="header-top-contacts">
+                                    <img src="./img/main/instagram.svg" alt="" class="header-top-contacts__img">
+                                    <a href="https://instagram.com/timeloft39" target="_blank" class="header-top-contacts__link">timeloft39</a>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                            <div class="header-top-button-wrap">
+                                <button class="header-top__btn">
+                                    Заявка на расчет стоимости
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-7 col-lg-7 col-xl-8">
+                            <h1 class="header-bottom__title">
+                                <span class="header-bottom__title--bold">Мебель </span>
+                                из металла, дерева, стекла и гранита в стиле <span class="header-bottom__title--bold">лофт</span>
+                            </h1>
+                            <div class="header-bottom-features">
+                                <article class="header-bottom-features-card">
+                                    <img src="./img/main/list.svg" alt="" class="header-bottom-features-card__img">
+                                    <h3 class="header-bottom-features-card__title">
+                                        Продукция по индивидуальному дизайну
+                                    </h3>
+                                </article>
+                                <article class="header-bottom-features-card">
+                                    <img src="./img/main/time.svg" alt="" class="header-bottom-features-card__img">
+                                    <h3 class="header-bottom-features-card__title">
+                                        Гарантированно короткие сроки
+                                    </h3>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-lg-5 col-xl-4">
+                            <div class="header-bottom-wrap">
+                                <div class="header-bottom-wrap-offer">
+                                    <h3 class="header-bottom-wrap-offer__title">
+                                        Узнайте стоимость
+                                    </h3>
+                                    <p class="header-bottom-wrap-offer__subtitle">
+                                        и получите скидку 20% в подарок!
+                                    </p>
+                                    <form action="" class="header-bottom-wrap-offer-form">
+                                        <input name="user-name" type="text" class="header-bottom-wrap-offer-form__input" placeholder="Ваше имя" minlength="2" maxlength="40">
+                                        <input name="user-tel" type="text" class="header-bottom-wrap-offer-form__input" placeholder="Номер телефона" required minlength="2" maxlength="40">
+                                        <!-- <label class="heder-bottom-wrap-offer-form-label">
+                                            <input name="user-file" type="file" id="myfile" class="header-bottom-wrap-offer-form-label__file" hidden>
+                                            <div class="header-bottom-wrap-offer-form-flex">
+                                                <img src="./img/main/attach.svg" alt="" class="header-bottom-wrap-offer-form-label__img">
+                                                <span class="header-bottom-wrap-offer-form-label__desc">Прикрепить чертёж</span>
+                                                <span class="header-bottom-wrap-offer-form-label__sub">(если имеется)</span>
+                                            </div>
+                                        </label> -->
+                                        <button class="header-bottom-wrap-offer-form__btn">
+                                            Узнать стоимость
+                                        </button>
+                                        <div class="header-bottom-wrap-offer-form-wrap">
+                                            <input type="checkbox" name="user-check" class="header-bottom-wrap-offer-form__checkbox" checked required>
+                                            <p class="header-bottom-wrap-offer-form__desc">
+                                                Я согласен <br> с <a class="header-bottom-wrap-offer-form__link" href="#">политикой конфиденциальности</a>
+                                            </p>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <section class="advantages">
+            <div class="container">
+                <h3 class="advantages__title">
+                    ПОЧЕМУ КЛИЕНТЫ ВЫБИРАЮТ ИМЕННО <span class="advantages__title--orange">НАС</span>
+                </h3>
+                <div class="advantages-features">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <article class="advantages-features-card">
+                                <img src="./img/advantages/certificate.svg" alt="" class="advantages-features-card__img">
+                                <p class="advantages-features-card__desc">
+                                    Гарантия на изделия 10 лет
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <article class="advantages-features-card">
+                                <img src="./img/advantages/calendar.svg" alt="" class="advantages-features-card__img">
+                                <p class="advantages-features-card__desc">
+                                    Изготовление изделия за 7 дней
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <article class="advantages-features-card">
+                                <img src="./img/advantages/moneybag.svg" alt="" class="advantages-features-card__img">
+                                <p class="advantages-features-card__desc">
+                                    Цены на 30% ниже мебельных магазинов
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <article class="advantages-features-card">
+                                <img src="./img/advantages/wholesaler.svg" alt="" class="advantages-features-card__img">
+                                <p class="advantages-features-card__desc">
+                                    Работа с различными материалами
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <article class="advantages-features-card">
+                                <img src="./img/advantages/delivery.svg" alt="" class="advantages-features-card__img">
+                                <p class="advantages-features-card__desc">
+                                    Бесплатные замер и доставка
+                                </p>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <article class="advantages-features-card">
+                                <img src="./img/advantages/like.svg" alt="" class="advantages-features-card__img">
+                                <p class="advantages-features-card__desc">
+                                    Довольные отзывы покупателей
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="products">
+            <div class="container">
+                <h2 class="products__title">
+                    НАШИ <span class="products__title--orange">ИЗДЕЛИЯ И УСЛУГИ</span>
+                </h2>
+                <div class="products-galery">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <article data-aos="fade-up" class="products-galery-card">
+                                <img src="./img/products/table_1.png" alt="" class="products-galery-card__img">
+                                <h3 class="products-galery-card__title">
+                                    Столы
+                                </h3>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <article data-aos="fade-up" class="products-galery-card">
+                                <img src="./img/products/bar.png" alt="" class="products-galery-card__img">
+                                <h3 class="products-galery-card__title">
+                                    Барные стойки
+                                </h3>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <article data-aos="fade-up" class="products-galery-card">
+                                <img src="./img/products/table_2.png" alt="" class="products-galery-card__img">
+                                <h3 class="products-galery-card__title">
+                                    Обеденные столы
+                                </h3>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <article data-aos="fade-up" class="products-galery-card">
+                                <img src="./img/products/stool.png" alt="" class="products-galery-card__img">
+                                <h3 class="products-galery-card__title">
+                                    Стулья
+                                </h3>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <article data-aos="fade-up" class="products-galery-card">
+                                <img src="./img/products/shelf.png" alt="" class="products-galery-card__img">
+                                <h3 class="products-galery-card__title">
+                                    Полки
+                                </h3>
+                            </article>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                            <article data-aos="fade-up" class="products-galery-card">
+                                <img src="./img/products/rack.png" alt="" class="products-galery-card__img">
+                                <h3 class="products-galery-card__title">
+                                    Стеллажи
+                                </h3>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sale">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-sm-12 col-md-7 col-lg-7 col-xl-8">
+                        <h2 class="sale__title">
+                            НЕ ПРОПУСТИТЕ <span class="sale__title--orange">АКЦИЮ!</span>
+                        </h2>
+                        <p class="sale__subtitle">
+                            Получите сертификат на скидку 20% в подарок
+                        </p>
+                        <div class="sale-timer">
+                            <h3 class="sale-timer__title">
+                                До конца акции осталось:
+                            </h3>
+                            <div id="counter" class="sale-timer__counter"></div>
+                            <div class="sale-timer-wrap">
+                                <span class="sale-timer-wrap__desc">дней</span>
+                                <span class="sale-timer-wrap__desc">часов</span>
+                                <span class="sale-timer-wrap__desc">минут</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5 col-lg-5 col-xl-4">
+                        <div class="header-bottom-wrap header-bottom-wrap--sale">
+                            <div class="header-bottom-wrap-offer">
+                                <h3 class="header-bottom-wrap-offer__title">
+                                    Узнайте стоимость
+                                </h3>
+                                <p class="header-bottom-wrap-offer__subtitle">
+                                    и получите скидку 20% в подарок!
+                                </p>
+                                <form action="" class="header-bottom-wrap-offer-form">
+                                    <input name="user-name" type="text" class="header-bottom-wrap-offer-form__input" placeholder="Ваше имя" minlength="2" maxlength="40">
+                                    <input name="user-tel" type="text" class="header-bottom-wrap-offer-form__input" placeholder="Номер телефона" required minlength="2" maxlength="40">
+                                    <input type='hidden' name='csrfToken' value="<?php echo($_SESSION['csrfToken'])?>">
+                                    <button class="header-bottom-wrap-offer-form__btn">
+                                        Узнать стоимость
+                                    </button>
+                                    <div class="header-bottom-wrap-offer-form-wrap">
+                                        <input type="checkbox" name="user-check" class="header-bottom-wrap-offer-form__checkbox" checked required>
+                                        <p class="header-bottom-wrap-offer-form__desc">
+                                            Я согласен <br> с <a class="header-bottom-wrap-offer-form__link" href="#">политикой конфиденциальности</a>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="examples">
+            <div class="container">
+                <h2 class="examples__title">
+                    ПРИМЕРЫ НАШИХ РАБОТ
+                </h2>
+                <div class="examples-galery">
+                    <div class="examples-buttons">
+                        <button class="examples-buttons__btn active" data-target="1">Все работы</button>
+                        <button class="examples-buttons__btn" data-target="2">Столешницы</button>
+                        <button class="examples-buttons__btn" data-target="3">Стулья</button>
+                        <button class="examples-buttons__btn" data-target="4">Барные стойки</button>
+                    </div>
+                    <div class="examples-galery-cases">
+                        <div class="examples-galery-case" data-target="1">
+                            <div class="examples-galery-case-wrap">
+                                <a href="./img/examples/img-1.png" data-fancybox class="examples-galery-case-wrap-item">
+                                    <img src="./img/examples/img-1.png" alt="" class="examples-galery-case-wrap-item__img">
+                                </a>
+                                <a href="./img/examples/img-2.png" data-fancybox class="examples-galery-case-wrap-item">
+                                    <img src="./img/examples/img-2.png" alt="" class="examples-galery-case-wrap-item__img">
+                                </a>
+                                <a href="./img/examples/img-3.png" data-fancybox class="examples-galery-case-wrap-item">
+                                    <img src="./img/examples/img-3.png" alt="" class="examples-galery-case-wrap-item__img">
+                                </a>
+                                <a href="./img/examples/img-4.png" data-fancybox class="examples-galery-case-wrap-item">
+                                    <img src="./img/examples/img-4.png" alt="" class="examples-galery-case-wrap-item__img">
+                                </a>
+                            </div>
+                            <a href="./img/examples/img-5.png" data-fancybox class="examples-galery-case-item one">
+                                <img src="./img/examples/img-5.png" alt="" class="examples-galery-case-item__img">
+                            </a>
+                            <a href="./img/examples/img-6.png" data-fancybox class="examples-galery-case-item one width-768">
+                                <img src="./img/examples/img-6.png" alt="" class="examples-galery-case-item__img">
+                            </a>
+                            <div class="examples-galery-case-wrap width-768">
+                                <a href="./img/examples/img-7.png" data-fancybox class="examples-galery-case-wrap-item">
+                                    <img src="./img/examples/img-7.png" alt="" class="examples-galery-case-wrap-item__img">
+                                </a>
+                                <a href="./img/examples/img-8.png" data-fancybox class="examples-galery-case-wrap-item">
+                                    <img src="./img/examples/img-8.png" alt="" class="examples-galery-case-wrap-item__img">
+                                </a>
+                                <a href="./img/examples/img-9.png" data-fancybox class="examples-galery-case-wrap-item">
+                                    <img src="./img/examples/img-9.png" alt="" class="examples-galery-case-wrap-item__img">
+                                </a>
+                                <a href="./img/examples/img-10.png" data-fancybox class="examples-galery-case-wrap-item">
+                                    <img src="./img/examples/img-10.png" alt="" class="examples-galery-case-wrap-item__img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="examples-galery-case" data-target="2">
+                            <div class="examples-galery-case-list">
+                                <a href="./img/examples/img-5.png" data-fancybox class="examples-galery-case-item">
+                                    <img src="./img/examples/img-5.png" alt="" class="examples-galery-case-item__img">
+                                </a>
+                                <a href="./img/examples/img-6.png" data-fancybox class="examples-galery-case-item width-768">
+                                    <img src="./img/examples/img-6.png" alt="" class="examples-galery-case-item__img">
+                                </a>
+                                <div class="examples-galery-case-wrap">
+                                    <a href="./img/examples/img-7.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-7.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-8.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-8.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-9.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-9.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-10.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-10.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                </div>
+                                <div class="examples-galery-case-wrap width-768">
+                                    <a href="./img/examples/img-1.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-1.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-2.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-2.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-3.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-3.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-4.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-4.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="examples-galery-case" data-target="3">
+                            <div class="examples-galery-case-list">
+                                <div class="examples-galery-case-wrap">
+                                    <a href="./img/examples/img-1.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-1.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-2.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-2.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-3.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-3.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-4.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-4.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                </div>
+                                <div class="examples-galery-case-wrap">
+                                    <a href="./img/examples/img-7.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-7.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-8.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-8.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-9.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-9.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-10.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-10.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                </div>
+                                <a href="./img/examples/img-5.png" data-fancybox class="examples-galery-case-item width-768">
+                                    <img src="./img/examples/img-5.png" alt="" class="examples-galery-case-item__img">
+                                </a>
+                                <a href="./img/examples/img-6.png" data-fancybox class="examples-galery-case-item width-768">
+                                    <img src="./img/examples/img-6.png" alt="" class="examples-galery-case-item__img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="examples-galery-case" data-target="4">
+                            <div class="examples-galery-case-list">
+                                <a href="./img/examples/img-6.png" data-fancybox class="examples-galery-case-item">
+                                    <img src="./img/examples/img-6.png" alt="" class="examples-galery-case-item__img">
+                                </a>
+                                <a href="./img/examples/img-5.png" data-fancybox class="examples-galery-case-item">
+                                    <img src="./img/examples/img-5.png" alt="" class="examples-galery-case-item__img">
+                                </a>
+                                <div class="examples-galery-case-wrap width-768">
+                                    <a href="./img/examples/img-7.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-7.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-8.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-8.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-9.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-9.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-10.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-10.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                </div>
+                                <div class="examples-galery-case-wrap width-768">
+                                    <a href="./img/examples/img-1.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-1.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-2.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-2.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-3.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-3.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                    <a href="./img/examples/img-4.png" data-fancybox class="examples-galery-case-wrap-item">
+                                        <img src="./img/examples/img-4.png" alt="" class="examples-galery-case-wrap-item__img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h2 class="reviews__title">
+                    ОТЗЫВЫ <span class="reviews__title--orange">ДОВОЛЬНЫХ</span> ПОКУПАТЕЛЕЙ
+                </h2>
+                <div class="reviews-slider owl-carousel owl-theme">
+                    <div class="item reviews-slider-card">
+                        <img src="./img/reviews/person_1.png" alt="" class="reviews-slider-card__img">
+                        <div class="reviews-slider-card-text">
+                            <h3 class="reviews-slider-card-text__title">
+                                Алина М.
+                            </h3>
+                            <p class="reviews-slider-card-text__desc">
+                                Завершили стеллаж за два дня! Доставили совершенно бесплатно. Материал очень прочный, а дерево на полочках хорошо обработано, тогда как в обычных магазинах за такую цену были бы неприятные сюрпризы.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item reviews-slider-card">
+                        <img src="./img/reviews/person_2.png" alt="" class="reviews-slider-card__img">
+                        <div class="reviews-slider-card-text">
+                            <h3 class="reviews-slider-card-text__title">
+                                Игорь С.
+                            </h3>
+                            <p class="reviews-slider-card-text__desc">
+                                Заказывал барную стойку. Рабочие приехали и сделали все замеры бесплатно. Саму барную стойку изготавливали всего неделю. Очень доволен услугами, которые предоставляет эта компания
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="faq">
+            <div class="container">
+                <h2 class="faq__title">
+                    <span class="faq__title--orange">ОТВЕТЫ</span> НА ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+                </h2>
+                <div class="faq-list">
+                    <article data-aos="fade-up" class="faq-list-card">
+                      <div class="faq-list-card-top">
+                        <h3 class="faq-list-card__title">
+                            От чего зависит цена изделия?
+                        </h3>
+                        <img src="./img/faq/down-arrow.svg" alt="" class="faq-list-card-top__img">
+                      </div>
+                      <div class="faq-list-card-bottom">
+                          <p class="faq-list-card-bottom__desc">
+                            Цена изделия зависит в первую очередь от материала. Стул из ЛДСП будет стоить существенно дешевле стула из дерева. <br> Также цена зависит от сложности проекта. Чем сложнее проект, тем он будет дороже
+                          </p>
+                      </div>
+                    </article>
+                    <article data-aos="fade-up" class="faq-list-card">
+                        <div class="faq-list-card-top">
+                          <h3 class="faq-list-card__title">
+                                Сколько времени в среднем уходит на изготовление изделия?
+                          </h3>
+                          <img src="./img/faq/down-arrow.svg" alt="" class="faq-list-card-top__img">
+                        </div>
+                        <div class="faq-list-card-bottom">
+                            <p class="faq-list-card-bottom__desc">
+                                Время изготовления продукта зависит от его сложности. Обычная полка будет готова гораздо раньше, чем сложный стеллаж. Однако все изделия изготавливаются не дольше двух недель
+                            </p>
+                        </div>
+                      </article>
+                      <article data-aos="fade-up" class="faq-list-card">
+                        <div class="faq-list-card-top">
+                          <h3 class="faq-list-card__title">
+                                Что такое лофт?
+                          </h3>
+                          <img src="./img/faq/down-arrow.svg" alt="" class="faq-list-card-top__img">
+                        </div>
+                        <div class="faq-list-card-bottom">
+                            <p class="faq-list-card-bottom__desc">
+                                Стиль лофт – это стиль оформления помещений с присущим ему минимализмом в интерьере, обилием свободного пространства, присутствием промышленных и индустриальных элементов
+                            </p>
+                        </div>
+                      </article>
+                      <!-- <article class="faq-list-card">
+                        <div class="faq-list-card-top">
+                          <h3 class="faq-list-card__title">
+                                Как создается дизайн изделия?
+                          </h3>
+                          <img src="./img/faq/down-arrow.svg" alt="" class="faq-list-card-top__img">
+                        </div>
+                        <div class="faq-list-card-bottom">
+                            <p class="faq-list-card-bottom__desc">
+                              Цена изделия зависит в первую очередь от материала. Стул из ЛДСП будет стоить существенно дешевле стула из дерева. <br> Также цена зависит от сложности проекта. Чем сложнее проект, тем он будет дороже
+                            </p>
+                        </div>
+                      </article> -->
+                </div>
+            </div>
+        </section>
+        <section class="contacts">
+            <div class="container">
+                <h2 class="contacts__title">
+                    НАШИ <span class="contacts__title--orange">КОНТАКТЫ</span>
+                </h2>
+                <div class="contacts-wrap">
+                    <div class="contacts-wrap-card">
+                        <img src="./img/contacts/instagram.svg" alt="" class="contscts-wrap-card__img">
+                        <h3 class="contacts-wrap-card__title">
+                            Instagram:
+                        </h3>
+                        <a href="https://instagram.com/timeloft39" target="_blank" class="contacts-wrap-card__desc">
+                            timeloft39
+                        </a>
+                    </div>
+                    <div class="contacts-wrap-card">
+                        <img src="./img/contacts/email.svg" alt="" class="contscts-wrap-card__img">
+                        <h3 class="contacts-wrap-card__title">
+                            Email:
+                        </h3>
+                        <a href="mailto:TimeLoft39@inbox.ru" class="contacts-wrap-card__desc">
+                            timeloft39@inbox.ru
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__desc">
+                TimeLoft - Мебель в стиле лофт 
+            </p>
+        </div>
+    </footer>
+
+    <div class="popup-container">
+        <div class="popup-overlay"></div>
+        <div class="popup-header">
+            <button class="popup-header__close"></button>
+            <p class="popup-header__title">Оставьте заявку <br> и узнайте стоимость изделия</p>
+            <form class="popup-header-form">
+                <input name="user-name" type="text" class="popup-header-form__input" placeholder="Ваше имя">
+                <input name="user-tel" type="text" class="popup-header-form__input" placeholder="Номер телефона" required>
+                <button type="submit" class="popup-header-form__submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.inputmask.min.js"></script>
+    <script src="./js/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./owlslider/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timer.jquery/0.7.0/timer.jquery.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
