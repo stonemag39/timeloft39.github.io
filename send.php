@@ -30,9 +30,6 @@
 
 <?php
 
-    $randomtoken = md5(uniqid(rand(), true));
-    $_SESSION['csrfToken']=$randomtoken;
-
     // Файлы phpmailer
     require 'phpmailer/PHPMailer.php';
     require 'phpmailer/SMTP.php';
